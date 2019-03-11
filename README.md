@@ -15,7 +15,7 @@ The file **modified_stochastic_ranking.py** is used to optimize objective functi
 ### 2.1 optimal_lhd.py
 When running **optimal_lhd.py**, you can obtain an optimal Latin hypercube design (LHD) with 13 levels and 2 factors. The number of levels and factors can be setted in the code. The code will illustrate three LHDs including: a random generated LHD, a starting LHD and an optimal LHD. The convergence curves of the simulated annealing algorithm are also presented.
 ### 2.2 pynet_for_test.py
-When running **pynet_for_test.py**, you can obtain the predicted function when alpha/beta=0.0005. The regularization parameters can be setted in the code to obtain different predicted functions. You may also select the method of Bayesian regularization to train the neural network. The optimal regularization parameters calculated by Bayesian regularization is 0.00054.
+When running **pynet_for_test.py**, you can obtain the predicted function under circumstances of alpha/beta=0.0005. The regularization parameters can be setted in the code to obtain different predicted functions. You may also select the method of Bayesian regularization to train the neural network. The optimal regularization parameters calculated by Bayesian regularization is 0.00054.
 ### 2.3 stochastic_ranking.py
 When running **stochastic_ranking.py**, you can obtain an optimal value for a benchmark function taken from literature. The literature and benchmark function are presented in code comments. The object and constraints are substituted by surrogate models. The code loads the surrogate models by the following code
 ```
