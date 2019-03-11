@@ -17,7 +17,7 @@ When running **optimal_lhd.py**, you can obtain an optimal Latin hypercube desig
 ### 2.2 pynet_for_test.py
 When running **pynet_for_test.py**, you can obtain the predicted function under circumstances of alpha/beta=0.0005. The regularization parameters can be setted in the code to obtain different predicted functions. You may also select the method of Bayesian regularization to train the neural network. The optimal regularization parameters calculated by Bayesian regularization is 0.00054.
 ### 2.3 stochastic_ranking.py
-When running **stochastic_ranking.py**, you can obtain an optimal value for a benchmark function taken from literature. The literature and benchmark function are presented in code comments. The object and constraints are substituted by surrogate models. The code loads the surrogate models by the following code
+When running **stochastic_ranking.py**, you can obtain an optimal value for a benchmark function taken from literature. The literature and benchmark function are presented in code comments. The object and constraints are substituted by surrogate models. The code reloads the surrogate models by the following method
 ```
 #read normalization data
 input_traindata_min_list, input_traindata_max_list, output_traindata_min_list, output_traindata_max_list = pynet.read_normalization_parameter('net_for_object_normalization.csv')
