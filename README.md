@@ -36,7 +36,7 @@ netuse_for_violation_2 = pynet.NetUtilize(net_for_violation_2, mu=1e-3, mu_dec=0
 ### 2.4 modified_stochastic_ranking.py
 When running **modified_stochastic_ranking.py**, you can obtain an optimal value for a benchmark function taken from literature. The object and constraints are substituted by surrogate models. The literature and benchmark function are presented in code comments. The code **stochastic_ranking.py** and **modified_stochastic_ranking** yield the same results for the benchmark function.
 ### 2.5 generate_sampling_data.py
-As mentioned before, when running the optimization algorithm, the object and constraints are substituted by surrogate models. Of course, you can obtain your own surrogate models by generating training data and test data for neural network and then training the network. When running **generate_sampling_data.py**, you have to comment out some codes to generate the training data for object or constraints. For example, if you generate the data for the object, you need to commnet out the code as follow
+As mentioned before, when running the optimization algorithm, the object and constraints are substituted by surrogate models. Of course, you can obtain your own surrogate models by generating training data and test data for neural network and then training the network. When running **generate_sampling_data.py**, you have to comment out some codes to generate the training data for object or constraints. For example, if you want to generate the data for the object, you need to commnet out the code as follow
 ```
 #constraint 1
 #fun_result.append((data_result_transpose[0][j]-0.05)**2+(data_result_transpose[1][j]-2.5)**2-4.84)
